@@ -4,7 +4,7 @@ const registerGameHandlers = require('./gameHandler');
 const createIoInstance = (httpServer) => {
     const io = new Server(httpServer, {
         cors: {
-            origin: "http://localhost:3000",
+            origin: "https://rock-paper-scissors-swart-nu.vercel.app/",
         },
     });
 
