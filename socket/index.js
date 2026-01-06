@@ -5,7 +5,8 @@ const createIoInstance = (httpServer) => {
     const io = new Server(httpServer, {
         cors: {
             origin: "https://rock-paper-scissors-kappa-sand.vercel.app",
-            methods: ["GET", "POST"]
+            methods: ["GET", "POST"],
+            credentials: true
         },
     });
 
